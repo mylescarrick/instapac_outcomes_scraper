@@ -4,14 +4,21 @@ A parser/scraper and learning outcomes CSV generator for APAC K12
 ## Installing & running
 
 1. Get the right Ruby. Since 2.6.x this includes Bundler.
+
    e.g. on a Mac… assuming you're using Homebrew
-   `brew install ruby-build rbenv`
-   `rbenv install 2.6.3`
+
+```
+brew install ruby-build rbenv
+rbenv install 2.6.3
+```
 
 2. Run it - it should get the dependencies
 
    E.g. for NESA (NSW outcomes)
-   `ruby nesa.rb`
+
+```
+ruby nesa.rb
+```
 
 
 

@@ -36,7 +36,6 @@ CSV.open(csv_path, 'w', headers: true) do |csv|
 
   # Structure is syllabuses > (fetch) syllabus > stages > objectives > outcomes
   syllabuses.each do |syllabus|
-    syllabus = syllabuses.first
     stages_url = "/syllabuses/#{ syllabus['syllabus_id'] }/stages/with_outcomes"
     stages = JSON.parse(Typhoeus.get(base_url + stages_url).body)
     stages.each do |stage|
